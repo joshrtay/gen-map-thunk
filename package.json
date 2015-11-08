@@ -1,5 +1,5 @@
 {
-  "name": "@joshrtay/gen-mapP",
+  "name": "gen-map-thunk",
   "description": "Map generator on to thunk.",
   "repository": "git://github.com/joshrtay/gen-mapP.git",
   "version": "0.1.0",

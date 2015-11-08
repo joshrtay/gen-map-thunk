@@ -1,5 +1,5 @@
 
-# gen-mapP
+# gen-map-thunk
 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
@@ -7,12 +7,12 @@ Map generator items on to a thunk. Great for async action creators in redux and 
 
 ## Installation
 
-    $ npm install gen-mapP
+    $ npm install gen-map-thunk
 
 ## Usage
 
 ```js
-import map from 'gen-mapP'
+import map from 'gen-map-thunk'
 import fetch from 'whatwg-fetch'
 
 let state = {}
