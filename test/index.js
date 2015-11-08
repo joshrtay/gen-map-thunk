@@ -47,5 +47,11 @@ test('async map', (t) => {
     t.deepEqual(l, [1, 2, 3])
     t.end()
   })
+})
 
+test('resolve value', (t) => {
+  map(function () {}, 1).then(function (res) {
+    t.equal(res, 1)
+    t.end()
+  })
 })

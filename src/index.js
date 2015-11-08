@@ -12,6 +12,7 @@ import toPromise from 'to-promise'
  function mapP (p, it) {
    return new Promise(function(resolve, reject) {
      if (is.function(it)) it = it()
+     if (!it || !is.function(it.next)) return resolve(it)
 
      var onFulfilled = iter('next')
      var onRejected = iter('throw')
