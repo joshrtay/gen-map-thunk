@@ -2,7 +2,6 @@
  * Imports
  */
 
-import is from '@weo-edu/is'
 import toPromise from 'to-promise'
 
 /**
@@ -15,8 +14,10 @@ import toPromise from 'to-promise'
 
 function map (p, it, ...args) {
   return new Promise(function (resolve, reject) {
-    if (is.function(it)) it = it(...args)
-    if (!it || !is.function(it.next)) return resolve(it)
+    if (isFunction(it)) {
+      it = it(...args)
+    }
+    if (!it || !isFunction(it.next)) return resolve(it)
 
     var onFulfilled = iter('next')
     var onRejected = iter('throw')
@@ -40,6 +41,15 @@ function map (p, it, ...args) {
       }
     }
   })
+}
+
+/**
+ * Check if value is function
+ * @param  {Any}  v
+ * @return {Boolean}
+ */
+function isFunction (v) {
+  return 'function' === typeof v
 }
 
 /**
