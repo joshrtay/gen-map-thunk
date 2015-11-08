@@ -9,9 +9,9 @@ import toPromise from 'to-promise'
  * gen-mapP
  */
 
- function mapP (p, it) {
+ function mapP (p, it, ...args) {
    return new Promise(function(resolve, reject) {
-     if (is.function(it)) it = it()
+     if (is.function(it)) it = it(...args)
      if (!it || !is.function(it.next)) return resolve(it)
 
      var onFulfilled = iter('next')
