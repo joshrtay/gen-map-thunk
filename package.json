@@ -2,7 +2,7 @@
   "name": "gen-map-thunk",
   "description": "Map generator on to thunk.",
   "repository": "git://github.com/joshrtay/gen-mapP.git",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
