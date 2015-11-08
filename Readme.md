@@ -1,7 +1,7 @@
 
 # gen-map-thunk
 
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+[![Codeship Status for joshrtay/gen-map-thunk](https://img.shields.io/codeship/4a647950-6881-0133-16de-262bff2f2afa/master.svg)](https://codeship.com/projects/114278)  [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 Map generator items on to a thunk. Great for async action creators in redux and more generally, for moving io to the edges of an application.
 
